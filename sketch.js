@@ -29,6 +29,7 @@ function switchColors() {
     }
 }
 
+let d = 1
 function makeTorus() {
     for (let i = 0; i < toruses; i++) {
         push()
@@ -40,9 +41,10 @@ function makeTorus() {
         pop()
     }
 
-    angle += 0.07
-    if (angle > 180) {
-        angle = 0
+    if (angle > 180 || angle < 0) {
+        d *= -1
+    } else {
+        angle += d*0.07
     }
 }
 
