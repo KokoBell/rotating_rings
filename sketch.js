@@ -13,9 +13,9 @@ function setup() {
 }
 
 function switchCircles() {
-    d1 = random(-1, 1)
-    d2 = random(-1, 1)
-    d3 = random(-1, 1)
+    d1 = randomGaussian(-1, 1)
+    d2 = randomGaussian(-1, 1)
+    d3 = randomGaussian(-1, 1)
     velocity = randomGaussian()
     toruses = random(1, 15)
     thickness = random(0.01, 0.999)
