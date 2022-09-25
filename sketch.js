@@ -34,8 +34,8 @@ function makeTorus() {
     for (let i = 0; i < toruses; i++) {
         push()
         fill(seed[i])
-        rotateX(d1 * angle * 0.09 * i * velocity+mouseX*0.001)
-        rotateY(d2 * angle * 0.09 * i * velocity+mouseY*0.001)
+        rotateX(d1 * angle * 0.09 * i * velocity)
+        rotateY(d2 * angle * 0.09 * i * velocity)
         rotateZ(d3 * angle * 0.09 * i * velocity)
         torus(50 * i, 10 * i * thickness / 2)
         pop()
