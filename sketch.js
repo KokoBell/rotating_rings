@@ -50,7 +50,6 @@ function makeTorus() {
 
 function draw() {
     background(bg)
-    //rectMode(CENTER)
     makeTorus()
 }
 
